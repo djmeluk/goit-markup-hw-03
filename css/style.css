@@ -37,7 +37,6 @@ ul {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 4px solid blue;
   
 }
 .section {
@@ -50,6 +49,7 @@ ul {
   list-style: none;
 }
 /* стилі студія */
+
 .logo {
   color: var(--black-logo-color);
   font-family: Raleway, sans-serif;
@@ -179,6 +179,15 @@ ul {
 
 .features {
   padding-bottom: 47px;
+  display: flex;
+  outline: 2px solid red;
+}
+
+.features .item:not(:last-child) {
+  margin-right: 30px;
+}
+.features .item {
+ min-width: 270px;
 }
 
 .features .features-title {
@@ -187,7 +196,7 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.features .features-item {
+.features .features-par {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 2;
@@ -197,19 +206,46 @@ ul {
 .job {
   padding-top: 47px;
 }
+.job-list {
+  display: flex;
+}
+.job-list .item {
+  min-width: 370px;
+}
+
+.job-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .job .job-title {
   color: var(--title-text-color);
   font-size: 36px;
   text-align: center;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 /* наша команда */
 .team {
   background-color: var(--team-background-color);
 }
+.team-list {
+  display: flex;
+}
 .team .team-item {
   background-color: var(--primary-background-color);
+  min-width: 270px;
+}
+.team .team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team .card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team .team-title {
@@ -218,6 +254,7 @@ ul {
   text-align: center;
   line-height: 42px;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 .team .team-employee {
   color: var(--title-text-color);
@@ -225,6 +262,7 @@ ul {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team .team-par {
@@ -235,6 +273,18 @@ ul {
 }
 
 /* футер */
+.footer-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-contact {
+  margin-top: 20px;
+}
+
+.footer-contact .item:not(:last-child) {
+ margin-bottom: 9px;
+} 
 .footer {
   background-color: var(--secondary-background-color);
 }
