@@ -411,6 +411,10 @@ ul {
   flex-wrap: wrap;
   gap: 30px;
 }
+.portfolio-list .item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
 .item .img-portfolio {
   display: block;
   width: 100%;
