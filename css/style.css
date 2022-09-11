@@ -37,12 +37,10 @@ ul {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 4px solid yellow; */
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* outline: 4px solid red; */
 }
 
 .list {
@@ -50,7 +48,6 @@ ul {
 }
 
 /* стилі студія */
-
 .logo {
   color: var(--black-logo-color);
   font-family: Raleway, sans-serif;
@@ -80,13 +77,12 @@ ul {
 .web:focus {
   color: var(--accent-color);
 }
+
 /* навігація */
 .nav {
   display: flex;
 }
 .nav .item:not(:last-child) {
-  /* background-color: yellowgreen; */
-  /* outline: 2px solid red; */
   margin-right: 50px;
 }
 
@@ -121,9 +117,13 @@ ul {
   display: flex;
   margin-left: auto;
 }
+
+.contact .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .contact .item:not(:last-child) {
-  /* background-color: yellowgreen;
-  outline: 2px solid red; */
   margin-right: 50px;
 }
 
@@ -140,12 +140,11 @@ ul {
 .contact .link:focus {
   color: var(--accent-color);
 }
+
 /*банер*/
 .banner {
   background-color: var(--secondary-background-color);
-}
-.banner-wrapper {
-  padding: 200px 0 200px 0;
+  padding: 200px 0;
   text-align: center;
 }
 
@@ -160,7 +159,6 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  /* outline: 1px solid yellow; */
 }
 
 /* особливості*/
@@ -177,15 +175,14 @@ ul {
   margin: -1px;
 }
 
-.features {
-  padding-bottom: 47px;
+.features-list {
   display: flex;
-  /* outline: 2px solid red; */
 }
 
 .features .item:not(:last-child) {
   margin-right: 30px;
 }
+
 .features .item {
   min-width: 270px;
 }
@@ -195,6 +192,7 @@ ul {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .features .features-par {
   color: var(--primary-text-color);
@@ -202,13 +200,16 @@ ul {
   line-height: 2;
   letter-spacing: 0.03em;
 }
+
 /* чим ми займаємося*/
 .job {
-  padding-top: 47px;
+  padding-top: 0;
 }
+
 .job-list {
   display: flex;
 }
+
 .job-list .item {
   min-width: 370px;
 }
@@ -221,6 +222,7 @@ ul {
   display: block;
   width: 100%;
 }
+
 .job .job-title {
   color: var(--title-text-color);
   font-size: 36px;
@@ -229,13 +231,16 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+
 /* наша команда */
 .team {
   background-color: var(--team-background-color);
 }
+
 .team-list {
   display: flex;
 }
+
 .team .team-item {
   background-color: var(--primary-background-color);
   min-width: 270px;
@@ -243,6 +248,7 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 .team-item .img {
   display: block;
   width: 100%;
@@ -253,7 +259,7 @@ ul {
 }
 
 .team .card {
-  padding: 30px 60px;
+  padding: 30px 0px;
   text-align: center;
 }
 
@@ -282,21 +288,15 @@ ul {
 }
 
 /* футер */
-.footer-wrapper {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer-contact {
-  margin-top: 20px;
+.footer {
+  background-color: var(--secondary-background-color);
+  padding: 60px 0;
 }
 
 .footer-contact .item:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer {
-  background-color: var(--secondary-background-color);
-}
+
 .footer .logo {
   color: var(--logo-footer-color);
   font-family: Raleway, sans-serif;
@@ -319,7 +319,9 @@ ul {
 .footer .logo:focus {
   color: var(--accent-color);
 }
-
+.address {
+  margin-top: 20px;
+}
 .address-list .address-city {
   color: var(--primary-background-color);
   font-style: normal;
@@ -347,8 +349,8 @@ ul {
 .address-list .address-link:focus {
   color: var(--accent-color);
 }
-/*стилі кнопок */
 
+/*стилі кнопок */
 .button.primary {
   background-color: var(--accent-color);
   font-family: Roboto, sans-serif;
@@ -357,12 +359,9 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  display: block;
   border-radius: 4px;
   border: 0px solid transparent;
   padding: 10px 32px;
-  min-width: 216px;
-  margin: 0 auto;
 }
 
 .button.primary:hover,
@@ -392,24 +391,27 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+/* стилі портфоліо */
 .poptfolio-btn {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .poptfolio-btn .item:not(:last-child) {
   margin-right: 8px;
 }
 
-/* стилі портфоліо */
 .line {
   border-bottom: 1px solid #ececec;
 }
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
+
 .portfolio-list .item {
   flex-basis: calc((100% - 60px) / 3);
 }
@@ -418,6 +420,7 @@ ul {
   display: block;
   width: 100%;
 }
+
 .portfolio .card {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
